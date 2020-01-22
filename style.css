@@ -14,7 +14,7 @@
     .heading{
         color: white;
         text-align: center;
-        margin-top: 80px;
+        margin-top: 50px;
     }
 
     .box{
@@ -106,7 +106,7 @@
 
     @media(max-width: 415px){
         .heading{
-          display: none;
+          opacity: 0;
         }
     }
     
