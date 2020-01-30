@@ -21,17 +21,24 @@
                 <input type="text" name="name" id="signup_name" required>
                 <label for="signup_name">Username</label>
             </div>
-            
-            <div class="inputBox">
-                <input type="password" name="password" id="signup_password"required>
-                <label for="signup_password">Password</label>
-            </div>
 
             <div class="inputBox">
                 <input type="email" name="email" id="signup_email" required>
                 <label for="signup_email">Email</label>
             </div>
-            <input type="submit" name="submit" value="Create">
+            
+            <div class="inputBox">
+                    <input type="password" name="password" id="signup_password" title="Password should be between 8 and 16 characters" required>
+                <label for="signup_password">Password</label>
+            </div>
+
+             <div class="inputBox">
+                <input type="password" name="confirm_password" id="confirm_password" title="Confirm Password should be between 8 and 16 characters" required>
+                <label for="confirm_password">Confirm Password</label>
+            </div>
+
+            
+            <input type="submit" name="submit" value="Create" id="submit">
             <p class="message">Already Registered?<a href="#" title="Click to Login">Login</a></p>
         </form>
 
@@ -51,14 +58,17 @@
         </form>
     </section>
     
-        <!-- <script src="jquery-3.4.1.js"></script> -->
+        
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="app.js"></script>
     <script>
         $(document).ready(function(){
             $('.message a').click(function(){
             $('form').animate({height:"toggle", opacity:"toggle"}, "slow");
             })
         })
+
+
        
     </script>
 </body>
